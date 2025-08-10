@@ -21,3 +21,4 @@ jobs:
       run: |
         docker build -t ${{ secrets.DOCKER_USERNAME }}/test_projects:helloWorld .
         docker push ${{ secrets.DOCKER_USERNAME }}/test_projects:helloWorld
+      working-directory: ./hello-world-app
